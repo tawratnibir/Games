@@ -1,0 +1,14 @@
+Colors:
+
+https://www.linuxjournal.com/content/programming-color-ncurses
+
+Ncurses library:
+
+https://www.youtube.com/watch?v=2Q0jUzhDJp0
+
+Backspace handling:
+
+https://stackoverflow.com/questions/11387572/using-backspace-with-ncurses
+
+(Did not need to use forms in my game logic)
+

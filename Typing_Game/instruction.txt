@@ -1,0 +1,34 @@
+Game overview:
+
+You need to compile the game first to play.
+To compile, use:
+    gcc final3.c -o game -lncurses
+It will compile the game perfectly.
+The game is based on typing test. It has three difficulties.
+Easy, Medium and Hard
+You can enter the difficulty you want to play on the command line to execute the "game" file
+Like:
+    ./game 1 < wordpool.txt
+    ./game 2 < wordpool.txt
+    ./game 3 < wordpool.txt 
+        1 for Easy
+        2 for Medium
+        3 for Hard
+Or if u wish to use the menu, just try
+    ./game < wordpool.txt
+In the menu,
+Choose difficulty and press enter to start the game
+You will be privided with a text and real time game statistics.
+You can press ESC to stop the game.
+It will automatically show the instantaneous results.
+The results contains WPM, CPS, Typed, Mistakes and Accuracy as well.
+
+The functions:
+
+initialize_colors() – Sets up color schemes for correct, incorrect, and highlighted text.
+display_results() – Calculates and prints your WPM, CPS, accuracy, and mistakes.
+game_loop() – The heart of the game: manages typing logic, tracks input, mistakes, and speed.
+generate_text() – Randomly selects words from a predefined list based on difficulty level.
+display_menu() – Shows the difficulty selection menu, allowing you to choose Easy, Medium, or Hard.
+display_start_screen() – Displays a "Press ENTER to start" message before the game begins.
+main() – Initializes everything, handles menu navigation, game execution, and replay/exit options.
