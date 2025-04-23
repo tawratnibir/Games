@@ -39,6 +39,13 @@ void game_loop(char *c, int len, int x, int low, int high, int word) {
 
     while (c[i] != '\0') {
         time(&end_time);
+        move(8, 0);
+        if((60.0 * (((float)typed - mistakes) / (4.0 * x))) / (difftime(end_time, start_time)) < 15.0) {
+            printw("Hurry up!\n");
+        }
+        else{
+            printw("\n");
+        }
         move(10, 0);
         clrtoeol();
         attron(COLOR_PAIR(5));
