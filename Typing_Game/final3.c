@@ -298,7 +298,7 @@ void loading_screens()
     for (int i = 0; i < 10; i++)
     {
         attron(COLOR_PAIR(1));
-        mvprintw(LINES - 4, (COLS - strlen("          ")) / 2 + i, "@");
+        mvprintw(LINES - 4, (COLS - strlen("          ")) / 2 + i, ">");
         attron(COLOR_PAIR(1));
         refresh();
         usleep(100000);
