@@ -191,9 +191,9 @@ void game_loop(char *c, int len, int x, int low, int high, int word)
         }
         printw("\nType '%c'", c[i]);
         attron(COLOR_PAIR(7));
-        mvprintw(15, 10, " /\\_/\\");
-        mvprintw(16, 10, "( o.o )");
-        mvprintw(17, 10, " > ^ <");
+        mvprintw(15, (COLS - strlen(" /\\_/\\")) / 2, " /\\_/\\");
+        mvprintw(16, (COLS - strlen(" ( o.o )")) / 2, " ( o.o )");
+        mvprintw(17, (COLS - strlen(" > ^ <")) / 2, " > ^ <");
         attroff(COLOR_PAIR(7));
         clrtoeol();
     }
